@@ -42,11 +42,11 @@
 
     &__icon.--active.menu__icon::after{
         top: 50%;
-        transform: rotate(45deg) translate(-3px, 0)
+        transform: rotate(45deg) translate(0, -50%);
     }
     &__icon.--active.menu__icon::before{
         bottom: 50%;
-        transform: rotate(-45deg) translate(-2px, 0)
+        transform: rotate(-45deg) translate(0, 50%);
     }
     &__icon.--active.menu__icon span{
         opacity: 0;
