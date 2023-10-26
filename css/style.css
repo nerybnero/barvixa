@@ -275,36 +275,20 @@ body {
 
 .hero {
   position: relative;
-  z-index: 3;
-  color: white;
-  margin-top: 132px;
+  z-index: 2;
+  margin-top: 86px;
 }
 .hero__title {
+  color: white;
+}
+.hero__title-strong {
   font-size: 55px;
   font-weight: 600;
   letter-spacing: 1.1px;
+  line-height: normal;
   text-transform: uppercase;
 }
-.hero__subtitle {
-  font-size: 30px;
-}
-.hero__btn-link {
-  color: rgba(44, 44, 44, 0.85);
-  font-size: 16px;
-}
-.hero__btn-title {
-  font-size: 14px;
-}
-.hero__navigation {
-  font-size: 14px;
-}
-.hero__bottom-title {
-  font-size: 16px;
-}
-.list__item {
-  font-size: 16px;
-}
-.bottom__btn-link {
-  color: rgba(44, 44, 44, 0.85);
-  font-size: 16px;
+.hero__title-sub {
+  font-size: 28px;
+  line-height: normal;
 }
