@@ -151,6 +151,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 .hero-wrapper::before {
   content: "";
@@ -338,6 +339,7 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: -22px;
+  margin-bottom: 32px;
 }
 .hero__footer {
   background: rgba(255, 255, 255, 0.3);
