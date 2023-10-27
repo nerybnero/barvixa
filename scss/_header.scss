@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
+    display: flex;
+    flex-direction: column;
     &::before{
         content: '';
         position: absolute;

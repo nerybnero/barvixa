@@ -3,11 +3,16 @@
     position: relative;
     z-index: 2;
     margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     &__body {
+  
     }
 
     &__title {
         color: white;
+        margin-bottom: 30px;
     }
 
     &__title-strong {
@@ -16,20 +21,21 @@
         letter-spacing: 1.1px;
         line-height: normal;
         text-transform: uppercase;
+        margin-left: -4px;
     }
 
     &__title-sub {
         font-size: 28px;
         line-height: normal;
-    }
-
-    &__list {
-        margin-top: 30px;
         
     }
 
-    &__button {
-        margin-top: 45px;
+    &__list {
+        margin-bottom: 45px;
+    }
+
+    &__give-precent {
+        
     }
 
     &__btn {
@@ -40,31 +46,47 @@
         border-radius: 141.852px;
         background: #FFF;
         font-size: 16px;
+        margin-bottom: 16px;
+        margin-left: -6px;
     }
 
     &__btn-desc {
         font-size: 14px;
         line-height: 20px;
         width: 60%;
-        margin-top: 16px;
         margin-left: 2px;
+        margin-bottom: 71px;
     }
 
     &__location {
+        max-width: 252px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: -22px;
     }
 
+   
+
     &__footer {
-        margin-top: 32px;
-        background: rgba(255, 255, 255, 0.10);
-        backdrop-filter: blur(80px);
-        min-height: 124px;
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(10px);
         width: 100%;
+        margin-top: auto;
+    }
+
+    &__footer-body{
+        min-height: 124px;
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0 24px 0;
+        justify-content: center;
+        align-items: center;
     }
 
     &__footer-text {
         line-height: normal;
-        margin-left: 15%;
-        margin-top: 3.5%;
+        text-align: center;
+        margin-bottom: 13px;
     }
 
     &__footer-btn {
@@ -73,11 +95,12 @@
         line-height: normal;
         color: white;
         padding: 16px 19px 15px 52px;
-        border-radius: 79.048px;
+        border-radius: 79px;
         background: linear-gradient(180deg, #0B6D7A -27.78%, #309FAD 67.46%);
-        margin-top: 2.8%;
-        margin-left: 22%;
         position: relative;
+        max-width: 249px;
+        width: 100%;
+        margin-left: -18px;
     }
 
     &__footer-btn::before{
@@ -88,8 +111,10 @@
         position: absolute;
         width: 28px;
         height: 28px;
-        left: 6%;
-        top: 19%;
+        top:50% ;
+        transform: translateY(-50%);
+        left: 5%;
+        
     }
 }
 .list {
@@ -150,11 +175,8 @@
 .location {
     border-radius: 70px;
     background: rgba(255, 255, 255, 0.14);
-    padding: 11px 0 6px 15px;
-    margin-top: 74px;
-    position: relative;
-    left: 52.5%;
-    width: 68%;
+    padding: 14px 0 6px 15px;
+    
     &__link {
         display: flex;
         align-items: center;
@@ -172,6 +194,6 @@
         color: white;
         line-height: 20px;
         font-size: 14px;
-        width: 35%;
+        max-width: 103px;
     }
 }
