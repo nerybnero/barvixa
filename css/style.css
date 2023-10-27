@@ -141,7 +141,7 @@ body {
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 50%;
   position: relative;
 }
 .hero-wrapper::before {
@@ -291,4 +291,105 @@ body {
 .hero__title-sub {
   font-size: 28px;
   line-height: normal;
+}
+.hero__list {
+  margin-top: 30px;
+}
+.hero__button {
+  margin-top: 45px;
+}
+.hero__btn {
+  padding: 16px 41px 16px 35px;
+  color: rgba(44, 44, 44, 0.85);
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 141.852px;
+  background: #FFF;
+  font-size: 16px;
+}
+.hero__btn-desc {
+  font-size: 14px;
+  line-height: 20px;
+  width: 60%;
+  margin-top: 16px;
+  margin-left: 2px;
+}
+.hero__footer {
+  margin-top: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(19.2999401093px);
+          backdrop-filter: blur(19.2999401093px);
+  min-height: 124px;
+}
+.hero__footer-text {
+  line-height: normal;
+  margin-left: 15%;
+  margin-top: 3.5%;
+}
+.hero__footer-btn {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: white;
+  padding: 16px 19px 15px 52px;
+  border-radius: 79.048px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-27.78%, #0B6D7A), color-stop(67.46%, #309FAD));
+  background: linear-gradient(180deg, #0B6D7A -27.78%, #309FAD 67.46%);
+  margin-top: 2.8%;
+  margin-left: 22%;
+  position: relative;
+}
+.hero__footer-btn::before {
+  content: "";
+  background-image: url("../img/icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 6%;
+  top: 19%;
+}
+
+.sum__house {
+  line-height: 30px;
+}
+.house__area {
+  line-height: 28px;
+}
+.price__house {
+  line-height: 28px;
+  margin-left: 2px;
+}
+.village__area {
+  line-height: 29px;
+  margin-left: 2px;
+}
+.location {
+  border-radius: 70px;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 11px 20px 6px 15px;
+  margin-top: 74px;
+  position: relative;
+  left: 52.5%;
+}
+.location__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.location__img {
+  position: relative;
+  bottom: 5px;
+  left: 2px;
+}
+.location__text {
+  color: white;
+  line-height: 20px;
+  font-size: 14px;
+  width: 35%;
 }

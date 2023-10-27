@@ -1,7 +1,8 @@
+
 .hero {
-position: relative;
-z-index: 2;
-margin-top: 86px;
+    position: relative;
+    z-index: 2;
+    margin-top: 86px;
     &__body {
     }
 
@@ -20,5 +21,155 @@ margin-top: 86px;
     &__title-sub {
         font-size: 28px;
         line-height: normal;
+    }
+
+    &__list {
+        margin-top: 30px;
+        
+    }
+
+    &__button {
+        margin-top: 45px;
+    }
+
+    &__btn {
+        padding: 16px 41px 16px 35px;
+        color: rgba(44, 44, 44, 0.85);
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 141.852px;
+        background: #FFF;
+        font-size: 16px;
+    }
+
+    &__btn-desc {
+        font-size: 14px;
+        line-height: 20px;
+        width: 60%;
+        margin-top: 16px;
+        margin-left: 2px;
+    }
+
+    &__location {
+    }
+
+    &__footer {
+        margin-top: 32px;
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(19.29994010925293px);
+        min-height: 124px;
+    }
+
+    &__footer-text {
+        line-height: normal;
+        margin-left: 15%;
+        margin-top: 3.5%;
+    }
+
+    &__footer-btn {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        color: white;
+        padding: 16px 19px 15px 52px;
+        border-radius: 79.048px;
+        background: linear-gradient(180deg, #0B6D7A -27.78%, #309FAD 67.46%);
+        margin-top: 2.8%;
+        margin-left: 22%;
+        position: relative;
+    }
+
+    &__footer-btn::before{
+        content: "";
+        background-image: url("../img/icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        left: 6%;
+        top: 19%;
+    }
+}
+.list {
+
+    &__item {
+    }
+}
+.sum {
+
+    &__house {
+        line-height: 30px;
+    }
+
+    &__house-numbers {
+    }
+
+    &__house-letters {
+    }
+}
+.house {
+
+    &__area {
+        line-height: 28px;
+    }
+
+    &__area-letters {
+    }
+
+    &__area-nubmers {
+    }
+}
+.price {
+
+    &__house {
+        line-height: 28px;
+        margin-left: 2px;
+    }
+
+    &__house-letters {
+    }
+
+    &__house-numbers {
+    }
+}
+.village {
+
+    &__area {
+        line-height: 29px;
+        margin-left: 2px;
+    }
+
+    &__area-letters {
+    }
+
+    &__area-numbers {
+    }
+}
+.location {
+    border-radius: 70px;
+    background: rgba(255, 255, 255, 0.14);
+    padding: 11px 20px 6px 15px;
+    margin-top: 74px;
+    position: relative;
+    left: 52.5%;
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    &__img {
+        position: relative;
+        bottom: 5px;
+        left: 2px;
+    }
+
+    &__text {
+        color: white;
+        line-height: 20px;
+        font-size: 14px;
+        width: 35%;
     }
 }
