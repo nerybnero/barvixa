@@ -1,10 +1,31 @@
+body{
+    font-family: gilroy;
+    font-size: 16px;
+    color: white;
+}
+
 .container {
     max-width: 358px;
     margin: 0 auto;
 }
-body {
-    font-family: gilroy;
-    font-size: 16px;
-    color: white;
-    overflow-x: hidden;
+
+.wrapper{
+    background-image: url("/img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

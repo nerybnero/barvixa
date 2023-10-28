@@ -8,100 +8,88 @@
     <script src="js/icon.js" defer></script>
   </head>
   <body>
-    <div class="hero-wrapper">
+    <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__body">
             <div class="header__left">
-              <nav class="header__menu menu">
-                <button class="menu__icon">
-                  <span></span>
-                </button>
-                <span class="menu__title">Меню</span>
+              <nav class="header__left menu">
+                <div class="menu">
+                  <div class="menu__icon">
+                    <span></span>
+                  </div>
+                  <span class="menu__desc">Меню</span>
+                </div>
               </nav>
             </div>
             <div class="header__right">
               <div class="header__right-top">
-                <div class="header__social social">
-                  <a class="social__telegram" href="">
-                    <img
-                      class="social__img"
-                      src="img/telegtam.svg"
-                      alt="Телеграм"
-                    />
+                <div class="header__sotial sotial">
+                  <a class="social__link" href="#">
+                    <img class="social__img" src="img/telegtam.svg" alt="telegtam">
                   </a>
-                  <a class="social__whatapp" href="">
-                    <img
-                      class="social__img"
-                      src="img/whatsapp.svg"
-                      alt="Ватцап"
-                    />
+                  <a class="social__link" href="#">
+                    <img class="social__img" src="img/whatsapp.svg" alt="whatsapp">
                   </a>
                 </div>
-                <button class="header__call call">Заказать звонок</button>
+                <button class="herader__right-btn">Заказать звонок</button>
               </div>
               <div class="header__right-bottom">
-                <a class="header__phone phone" href="">+7 (495) 135-13-34</a>
+                <a class="header__tel-link tel" href="tel:+7 (495) 135-13-34">
+                  +7 (495) 135-13-34
+                </a>
               </div>
             </div>
           </div>
         </div>
       </header>
+
       <div class="hero">
         <div class="container">
           <div class="hero__body">
             <h1 class="hero__title">
               <span class="hero__title-strong">Барвиха 21 -</span>
-              <span class="hero__title-sub"
-                >коттеджный поселок на Рублево-Успенском шоссе</span
-              >
+              <span class="hero__title-sub">коттеджный поселок на Рублево-Успенском шоссе</span>
             </h1>
-            <ul class="hero__list list">
-              <li class="list__item sum__house">
-                <span class="sum__house-numbers">49</span>
+            <ul class="hero__list">
+              <li class="hero__list-item sum__house">
+                <span class="sum__house-numbers">49</span>   
                 <span class="sum__house-letters">домов в поселке</span>
               </li>
-              <li class="list__item house__area">
-                <span class="house__area-letters">Площадь от</span>
-                <span class="house__area-nubmers">478</span>
-                <span class="house__area-letters">до</span>
-                <span class="house__area-nubmers">700</span>
-                <span class="house__area-letters">м²</span>
+              <li class="hero__list-item square">
+                <span class="square__letters">Площадь от </span> 
+                <span class="square__numbers">478</span>
+                <span class="square__letters">до</span> 
+                <span class="square__numbers">700 </span>
+                <span class="square__letters">м²</span>
               </li>
-              <li class="list__item price__house">
-                <span class="price__house-letters">Цены от</span>
+              <li class="hero__list-item price__house">
+                <span class="price__house-letters">Цены от </span>
                 <span class="price__house-numbers">215</span>
                 <span class="price__house-letters">млн. ₽</span>
-              </li>
-              <li class="list__item village__area">
-                <span class="village__area-letters">Площадь поселка</span>
-                <span class="village__area-numbers">25</span>
-                <span class="village__area-letters">Га</span>
+                </li>
+              <li class="hero__list-item square__area">
+                <span class="square__area-letters">Площадь поселка</span>
+                <span class="square__area-numbers">25</span>
+                <span class="square__area-letters">Га</span>
               </li>
             </ul>
-            <div class="hero__give-precent">
-              <button class="hero__btn">Получить презентацию</button>
-              <span class="hero__btn-desc"
-                >Получите презентацию объектов от наших экспертов</span
-              >
-            </div>
+            <button class="hero__btn">Получить презентацию</button>
+            <span class="hero__btn-desc">Получите презентацию объектов от наших экспертов</span>
           </div>
         </div>
-        <div class="hero__location location">
-          <a class="location__link" href="#">
-            <img class="location__img" src="img/location.svg" alt="Локация" />
-            <span class="location__text">Расположение на карте</span>
-          </a>
-        </div>
-
-        <div class="hero__footer">
-          <div class="container">
-            <div class="hero__footer-body">
-              <span class="hero__footer-text"
-                >Полная база объектов в поселке Барвиха-21</span
-              >
-              <button class="hero__footer-btn">Получить презентацию</button>
-            </div>
+      </div>
+      <div class="hero__location">
+        <a class="hero__location-link" href="#">
+          <img class="hero__location-img" src="img/location.svg" alt="location">
+          <span class="hero__location-desc">Расположение на карте</span>
+        </a>
+      </div>
+      <div class="hero__footer">
+        <div class="container">
+          <div class="hero__footer-body">
+            <div class="hero__footer-desc">Полная база объектов в поселке Барвиха-21</div>
+            <a class="hero__footer-link" href="index.html" download>Получить презентацию</a>
           </div>
         </div>
       </div>
