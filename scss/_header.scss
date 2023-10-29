@@ -7,56 +7,37 @@
         margin-bottom: 88px;
         position: relative;
         z-index: 2;
+        @media(min-width: 960px){
+            margin-bottom: 40px;
+            margin-top: 28px;
+            margin-left: 5px;
+        }
     }
 
     &__left {
     }
 
     &__right {
-    }
-
-    &__right-top {
-        display: flex;
-        justify-content: center;
+        display:inline-flex;
         align-items: center;
-        margin-bottom: 15px;
-        gap: 21px;
-    }
-
-    &__sotial {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    &__right-bottom {
-        display: flex;
         justify-content: flex-end;
+        max-width: 255px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+            @media(min-width: 960px){
+            display: flex;
+            align-items: baseline;
+            max-width: 350px;
+            width: 100%;
+            gap: 9px;
+            .header__right-tel{order: 1;}
+            .header__right-call{order: 2;}
+        }
     }
-
-    &__tel-link {
+    
+    &__right-call{
     }
-}
-
-.menu {
-
-    &__icon {
-    }
-
-    &__desc {
-    }
-}
-
-.social {
-    &__link {
-        margin-bottom: 3px;
-    }
-
-    &__img {
-    }
-}
-.herader {
 
     &__right-btn {
         padding: 7px 19px 6px 22px;
@@ -65,9 +46,61 @@
         margin-top: -6px;
         color: white;
         font-size: 16px;
+        @media(min-width: 960px){
+            font-size: 12px;
+            padding: 6px 14px 5px 19px;
+            
+        }
+    }
+
+    &__sotial {
+        display: flex;
+        gap: 10px;
+        margin-right: 7px;
+        margin-top: -2px;
+    }
+
+
+    &__right-tel{
+  
+    }
+
+    &__tel-link {
     }
 }
+
+.menu {
+        @media(min-width: 960px){
+        display: flex;
+        gap: 19px;
+    }
+    &__icon {
+    }
+
+    &__desc {
+    }
+}
+
+.social {
+    &__link-telegram{
+
+    }
+
+    &__link-whatsapp{
+
+    }
+
+    &__img {
+        @media(min-width: 960px){
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
 .tel {
     margin-right: 15px;
     color: white;
 }
+
+
