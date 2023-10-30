@@ -5,6 +5,9 @@ body{
     @media(min-width: 960px){
         font-size: 12px;
     }
+    @media(min-width: 1366px){
+        font-size: 20px;
+    }
 }
 
 .container {
@@ -15,6 +18,12 @@ body{
     }
     @media(min-width: 960px){
         max-width: 728px;
+    }
+    @media(min-width: 1366px){
+        max-width: 1034px;
+    }
+    @media(min-width: 1920px){
+        max-width: 1455px;
     }
 }
 
@@ -33,6 +42,12 @@ body{
     }
     @media(min-width: 700px){
         background-image: url("../img/hero-bg960.jpg");
+    }
+    @media(min-width: 1030px){
+        background-image: url("../img/hero-bg1366.jpg");
+    }
+    @media(min-width: 1450px){
+        background-image: url("../img/hero-bg1920.jpg");
     }
     &::before{
         content: "";

@@ -12,6 +12,14 @@
             margin-top: 28px;
             margin-left: 5px;
         }
+        @media(min-width: 1366px){
+            margin-top: 38px;
+            margin-bottom: 62px;
+        }
+        @media(min-width: 1920px){
+            margin-top: 55px;
+            margin-bottom: 88px;
+        }
     }
 
     &__left {
@@ -29,14 +37,21 @@
             display: flex;
             align-items: baseline;
             max-width: 350px;
-            width: 100%;
             gap: 9px;
-            .header__right-tel{order: 1;}
-            .header__right-call{order: 2;}
+        }
+        @media(min-width: 1366px){
+            max-width: 450px;
+        }
+        @media(min-width: 1920px){
+            max-width: 590px;
+            gap: 20px;
         }
     }
     
     &__right-call{
+        @media(min-width: 960px){
+            order: 2;
+        }
     }
 
     &__right-btn {
@@ -49,7 +64,15 @@
         @media(min-width: 960px){
             font-size: 12px;
             padding: 6px 14px 5px 19px;
-            
+        }
+        @media(min-width: 1366px){
+            font-size: 18px;
+            padding: 7px 22px 9px 25px;
+        }
+        @media(min-width: 1920px){
+            font-size: 25px;
+            padding: 10px 31px 13px 35px;
+            margin-top: -10px;
         }
     }
 
@@ -58,11 +81,16 @@
         gap: 10px;
         margin-right: 7px;
         margin-top: -2px;
+        @media(min-width: 960px){
+            margin-right: 2px;
+        }
     }
 
 
     &__right-tel{
-  
+        @media(min-width: 960px){
+            order: 1;
+        }
     }
 
     &__tel-link {
@@ -71,13 +99,27 @@
 
 .menu {
         @media(min-width: 960px){
-        display: flex;
-        gap: 19px;
+            display: flex;
+            gap: 19px;
     }
+    
     &__icon {
+        @media(min-width: 1366px){
+            margin-top: 3px;
+        }
     }
 
     &__desc {
+        @media(min-width: 1366px){
+            font-size: 18px;
+        }
+        @media(min-width: 1366px){
+            margin-left: 9px;
+        }
+        @media(min-width: 1920px){
+            font-size: 25px;
+            margin-left: 20px;
+        }
     }
 }
 
@@ -95,12 +137,29 @@
             width: 15px;
             height: 15px;
         }
+        @media(min-width: 1366px){
+            width: 22px;
+            height: 22px;
+        }
+        @media(min-width: 1920px){
+            width: 28px;
+            height: 28px;
+            margin-top: -6px;
+            
+        }
+        
     }
 }
 
 .tel {
     margin-right: 15px;
     color: white;
+    @media(min-width: 1366px){
+        font-size: 18px;
+    }
+    @media(min-width: 1920px){
+        font-size: 25px;
+    }
 }
 
 

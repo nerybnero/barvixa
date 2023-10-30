@@ -12,7 +12,16 @@
             margin-bottom: 26px;
         }
         @media(min-width: 960px){
-            margin-bottom: 37px;
+            margin-bottom: 39px;
+        }
+        @media(min-width: 1366px){
+            margin-bottom: 55px;
+            display: flex;
+            flex-direction: column;
+            margin-left: -8px;
+        }
+        @media(min-width: 1920px){
+            margin-bottom: 70px;
         }
     }
 
@@ -22,6 +31,14 @@
         line-height: normal;
         letter-spacing: 1.1px;
         text-transform: uppercase;
+        @media(min-width: 1366px){
+            font-size: 78px;
+            letter-spacing: 2px;
+        }
+        @media(min-width: 1920px){
+            font-size: 110px;
+            margin-bottom: 8px;
+        }
     }
 
     &__title-sub {
@@ -33,29 +50,56 @@
         @media(min-width: 960px){
             max-width: 384px;
         }
+        @media(min-width: 1366px){
+            font-size: 42px;
+            max-width: 550px;
+        }
+        @media(min-width: 1920px){
+            font-size: 50px;
+            max-width: 650px;
+            line-height: 67px;
+        }
     }
 
     &__list {
         margin-bottom: 46px;
         @media(min-width: 960px){
-            max-width: 365px;
+            max-width: 390px;
             width: 100%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 3px;
+            gap: 5px;
             .sum__house{order: 1;}
             .square{order: 3;}
             .price__house{order: 2;}
             .square__area{order: 4;}
-            margin-bottom: 33px;
+            margin-bottom: 35px;
+        }
+        @media(min-width: 1366px){
+            max-width: 520px;
+            margin-left: -5px;
+            margin-bottom: 47px;
+        }
+        @media(min-width: 1920px){
+            max-width: 730px;
         }
     }
 
     &__list-item {
+        flex: 0 0 47%;
         line-height: 28px;
         @media(min-width: 960px){
             font-size: 14px;
+            line-height: 25px;
+        }
+        @media(min-width: 1366px){
+            font-size: 20px;
+            line-height: 40px;
+        }
+        @media(min-width: 1920px){
+            font-size: 28px;
+            line-height: 60px;
         }
     }
 
@@ -63,9 +107,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        @media(min-width: 960px){
-            position: relative;
-        }
     }
 
     &__btn {
@@ -83,6 +124,14 @@
             margin-left: 0px;
             margin-bottom: 10px;
         }
+        @media(min-width: 1366px){
+            font-size: 20px;
+            padding: 16px 24px 17px 32px; 
+            margin-bottom: 17px;      
+        }
+        @media(min-width: 1920px){
+            font-size: 28px;
+        }
     }
 
     &__btn-desc {
@@ -96,6 +145,14 @@
             max-width: 170px;
             line-height: 18px;
             margin-bottom: 18px;
+        }
+        @media(min-width: 1366px){
+            font-size: 16px; 
+            max-width: 240px;
+            line-height: 23px;
+        }
+        @media(min-width: 1920px){
+            font-size: 22px;
         }
     }
 }
@@ -121,6 +178,9 @@
 
     &__area {
         margin-left: 2px;
+        @media(min-width: 960px){
+            margin-right: 8px;
+        }
     }
 
     &__area-letters {
@@ -130,8 +190,7 @@
     }
 }
 .price__house {
-margin-left: 3px;
-
+margin-right: 3px;
     &__house-letters {
     }
 
@@ -157,6 +216,8 @@ margin-left: 3px;
             right: 0;
             margin-bottom: 0;
         }
+        @media(min-width: 1366px){
+        }
     }
 
     &__location-link{
@@ -168,12 +229,24 @@ margin-left: 3px;
         @media(min-width: 960px){
             padding: 13px 71px 9px 0;
         }
+        @media(min-width: 1366px){
+            display: flex;
+            align-items: center;
+            padding: 2px 101px 8px 10px;
+            
+        }
     }
 
     &__location-img{
         padding-left: 15px;
         margin-top: -3px;
         margin-right: -3px;
+        @media(min-width: 1366px){
+           width: 85px;
+           height: 85px;
+           margin-right: 6px;
+           margin-top: 5px;
+        }
     }
 
     &__location-desc {
@@ -189,6 +262,15 @@ margin-left: 3px;
             line-height: 15px;
             margin-top: 8px;
             margin-right: 7px;
+        }
+        @media(min-width: 1366px){
+            font-size: 18px;
+            margin-right: 31px;
+            margin-top: 3;
+            line-height: 20px;
+        }
+        @media(min-width: 1920px){
+            font-size: 25px;
         }
     }
 
@@ -209,6 +291,10 @@ margin-left: 3px;
             min-height: 78px;
             padding: 0;
         }
+        @media(min-width: 1366px){
+            min-height: 111px;
+        }
+        
     }
 
     &__footer-desc {
@@ -218,6 +304,12 @@ margin-left: 3px;
             font-size: 14px;
             margin-top: 15px;
             margin-left: -4px;            
+        }
+        @media(min-width: 1366px){
+            font-size: 20px;
+        }
+        @media(min-width: 1920px){
+            font-size: 28px;
         }
     }
 
@@ -238,12 +330,20 @@ margin-left: 3px;
             margin: 0;
             padding: 17px 23px 13px 46px;
         }
+        @media(min-width: 1366px){
+            font-size: 20px;
+            padding: 20px 28px 19px 66px;
+        }
+        @media(min-width: 1920px){
+            font-size: 28px;
+        }
     }
 
     &__footer-link::before{
         content: "";
         background-image: url("/img/icon.svg");
-        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
         z-index: 2;
         width: 28px;
@@ -251,11 +351,14 @@ margin-left: 3px;
         top: 50%;
         transform: translateY(-50%);
         left: 15px;
-/*         @media(min-width: 960px){
-            background-image: url("/img/icon960.svg");
+        @media(min-width: 960px){
             width: 24px;
             height: 24px;
             
-    } */
+    }
+        @media(min-width: 1366px){
+        height: 35px;
+        width: 35px;
+    }
 }
 }

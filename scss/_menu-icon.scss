@@ -10,6 +10,14 @@
             width: 20px;
             height: 10px;
         }
+        @media(min-width: 1366px){
+            width: 28px;
+            height: 12px;
+        }
+        @media(min-width: 1920px){
+            width: 40px;
+            height: 20px;
+        }
     }
 
     &__icon::after {
