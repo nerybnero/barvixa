@@ -1,12 +1,11 @@
 .header {
-
     &__body {
         display: flex;
         justify-content: space-between;
         margin-top: 31px;
         margin-bottom: 88px;
         position: relative;
-        z-index: 2;
+        z-index: 3;
         @media(min-width: 960px){
             margin-bottom: 40px;
             margin-top: 28px;
@@ -55,35 +54,39 @@
     }
 
     &__right-btn {
-        padding: 7px 19px 6px 22px;
-        border-radius: 88px;
-        border: 1px solid #FFF;
         margin-top: -6px;
-        color: white;
-        font-size: 16px;
-        @media(min-width: 960px){
-            font-size: 12px;
-            padding: 6px 14px 5px 19px;
-        }
-        @media(min-width: 1366px){
-            font-size: 18px;
-            padding: 7px 22px 9px 25px;
-        }
         @media(min-width: 1920px){
-            font-size: 25px;
-            padding: 10px 31px 13px 35px;
             margin-top: -10px;
         }
     }
 
     &__sotial {
         display: flex;
-        gap: 10px;
+        gap: 11px;
         margin-right: 7px;
         margin-top: -2px;
         @media(min-width: 960px){
             margin-right: 2px;
         }
+
+    }
+    &__sotial .social__img{
+        width: 15px;
+        height: 15px;
+        @media(min-width: 960px){
+            width: 15px;
+            height: 15px;
+        }
+        @media(min-width: 1366px){
+            width: 22px;
+            height: 22px;
+        }
+        @media(min-width: 1920px){
+            width: 28px;
+            height: 28px;
+        }
+
+
     }
 
 
@@ -98,10 +101,12 @@
 }
 
 .menu {
-        @media(min-width: 960px){
+     &__body{
+    @media(min-width: 960px){
             display: flex;
             gap: 19px;
     }
+    } 
     
     &__icon {
         @media(min-width: 1366px){
@@ -133,23 +138,8 @@
     }
 
     &__img {
-        @media(min-width: 960px){
-            width: 15px;
-            height: 15px;
-        }
-        @media(min-width: 1366px){
-            width: 22px;
-            height: 22px;
-        }
-        @media(min-width: 1920px){
-            width: 28px;
-            height: 28px;
-            margin-top: -6px;
-            
-        }
-        
+       }
     }
-}
 
 .tel {
     margin-right: 15px;
@@ -162,4 +152,24 @@
     }
 }
 
-
+.call{
+    &__btn{
+        padding: 7px 19px 6px 22px;
+        border-radius: 88px;
+        border: 1px solid #FFF;
+        color: white;
+        font-size: 16px;
+        @media(min-width: 960px){
+            font-size: 12px;
+            padding: 6px 14px 5px 19px;
+        }
+        @media(min-width: 1366px){
+            font-size: 18px;
+            padding: 7px 22px 9px 25px;
+        }
+        @media(min-width: 1920px){
+            font-size: 25px;
+            padding: 10px 31px 13px 35px;
+        } 
+    }
+}

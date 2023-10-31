@@ -1,0 +1,146 @@
+.menu {
+
+    &__body {
+    }
+
+    &__icon {
+    }
+
+    &__modal {
+        position: fixed;
+        background: #242424;
+        top: -200%;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 100;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow-y: scroll;
+        @media(min-width: 960px){
+            width: 52%;
+        }
+    }
+
+
+    &.menu-open &__modal{
+        top: 0;
+
+    }
+    
+
+    &__list {
+        margin-top: 148px;
+        margin-bottom: 96px;
+        @media(min-width: 960px){
+            margin-top: 74px;
+            margin-bottom: 67px;
+        }
+        @media(min-width: 1366px){
+            margin-top: 108px;
+            margin-bottom: 98px;
+        }
+        @media(min-width: 1920px){
+            margin-top: 150px;
+            margin-bottom: 120px;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 24px;
+        margin-bottom: 22px;
+        @media(min-width: 960px){
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+        @media(min-width: 1366px){
+            font-size: 24px;
+            margin-bottom: 22px;
+        }
+        @media(min-width: 1920px){
+            font-size: 28px;
+            margin-bottom: 37px;
+        }
+    }
+
+    &__item-link{
+        color: white;
+    }
+
+    &__bottom {
+    }
+
+    &__bottom-tel {
+        margin-left: 12px;
+        margin-bottom: 19px;
+        @media(min-width: 1920px){
+            margin-bottom: 48px;
+        }
+    }
+
+
+    &__tel-link {
+        color: white;
+        @media(min-width: 960px){
+            font-size: 18px;
+        }
+        @media(min-width: 1366px){
+            font-size: 25px;
+        }
+        @media(min-width: 1920px){
+            font-size: 36px;
+        }
+    }
+
+    &__bottom-sotial{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    } .social__img {
+        width: 27px;
+        height: 27px;
+        @media(min-width: 960px){
+            width: 20px;
+            height: 20px;
+            gap: 17px;
+        }
+        @media(min-width: 1366px){
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__bottom-call {
+        margin-bottom: 35px;
+        .call__btn{
+            padding: 7px 22px 9px 25px;
+            font-size: 18px;
+            @media(min-width: 960px){
+                font-size: 10px;
+            }
+            @media(min-width: 1366px){
+                font-size: 18px;
+            }
+            @media(min-width: 1920px){
+                font-size: 20px;
+                padding: 14px 56px 15px 52px;
+            }
+        }
+        @media(min-width: 960px){
+            margin-bottom: 20px;
+        }
+        @media(min-width: 1366px){
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__desc {
+    }
+}
+
