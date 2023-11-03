@@ -22,6 +22,12 @@
         @media(min-width: 960px){
             width: 52%;
         }
+        @media(min-width: 1366px){
+            overflow-y: auto;
+        }
+        @media(min-width: 1920px){
+            overflow-y: hidden;   
+        }
     }
 
 
@@ -44,7 +50,7 @@
         }
         @media(min-width: 1920px){
             margin-top: 150px;
-            margin-bottom: 120px;
+            margin-bottom: 40px;
         }
     }
 

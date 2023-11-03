@@ -129,18 +129,6 @@ body {
   font-size: 16px;
   color: white;
 }
-@media (orientation: portrait) {
-  body {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@media (orientation: landscape) {
-  body {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-}
 @media (min-width: 960px) {
   body {
     font-size: 12px;
@@ -252,6 +240,16 @@ body {
     width: 52%;
   }
 }
+@media (min-width: 1366px) {
+  .menu__modal {
+    overflow-y: auto;
+  }
+}
+@media (min-width: 1920px) {
+  .menu__modal {
+    overflow-y: hidden;
+  }
+}
 .menu.menu-open .menu__modal {
   top: 0;
 }
@@ -274,7 +272,7 @@ body {
 @media (min-width: 1920px) {
   .menu__list {
     margin-top: 150px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 }
 .menu__list-item {
@@ -515,6 +513,7 @@ body {
   .header__sotial .social__img {
     width: 28px;
     height: 28px;
+    margin-top: -8px;
   }
 }
 @media (min-width: 960px) {
