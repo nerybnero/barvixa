@@ -129,6 +129,12 @@ body {
   font-size: 16px;
   color: white;
 }
+@media (min-width: 480px) {
+  body {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media (min-width: 960px) {
   body {
     font-size: 12px;
@@ -233,7 +239,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 @media (min-width: 960px) {
   .menu__modal {

@@ -2,12 +2,16 @@ body{
     font-family: gilroy;
     font-size: 16px;
     color: white;
+    @media(min-width: 480px){
+        transform: scale(1);
+    }
     @media(min-width: 960px){
         font-size: 12px;
     }
     @media(min-width: 1366px){
         font-size: 20px;
     }
+
 }
 
 .container {
