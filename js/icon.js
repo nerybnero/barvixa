@@ -24,7 +24,7 @@ function saveCurrentScale() {
   // Вызываем функцию сохранения текущего масштаба при загрузке страницы
   saveCurrentScale();
   
-  // Вызываем функцию восстановления масштаба при изменении ориентации
-  window.onorientationchange = function() {
+  // Вызываем функцию восстановления масштаба при изменении размера окна (ориентации)
+  window.addEventListener('resize', function() {
     restoreScale();
-  };
+  });
