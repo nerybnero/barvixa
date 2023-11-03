@@ -8,3 +8,23 @@ window.addEventListener("click", function(click){
           }
     }
 })
+
+function saveCurrentScale() {
+    localStorage.setItem('savedScale', document.body.style.transform);
+  }
+  
+  // Функция для восстановления масштаба
+  function restoreScale() {
+    const savedScale = localStorage.getItem('savedScale');
+    if (savedScale) {
+      document.body.style.transform = savedScale;
+    }
+  }
+  
+  // Вызываем функцию сохранения текущего масштаба при загрузке страницы
+  saveCurrentScale();
+  
+  // Вызываем функцию восстановления масштаба при изменении ориентации
+  window.onorientationchange = function() {
+    restoreScale();
+  };
