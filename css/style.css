@@ -129,10 +129,16 @@ body {
   font-size: 16px;
   color: white;
 }
-@media (min-width: 480px) {
+@media (orientation: portrait) {
   body {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+@media (orientation: landscape) {
+  body {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 @media (min-width: 960px) {
